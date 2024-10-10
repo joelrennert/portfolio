@@ -1,0 +1,36 @@
+#fbf3e6 #ff6641 #236df6 #fed132 {
+}
+
+meshbgcolors {
+  yellowish: rgba(208,	179, 156);
+  bluee: rgba(81,112,134);	
+
+}
+
+
+/* KEEP THIS!! its cool */
+/* .h2Text {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-size: 6rem;
+  padding: 20px 40px; 
+  color: #000000; 
+  font-family: 'Baumans';
+  letter-spacing: -5px;
+  line-height: 1;
+  background: linear-gradient(
+    302deg,
+    rgba(255, 102, 65, 1) 0%,
+    rgba(254, 209, 50, 1) 49%,
+    rgba(35, 109, 246, 1) 100%
+  );
+  width: 80%;
+  height: 70%; 
+  border-radius: 20px;
+  gap: 5px;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
