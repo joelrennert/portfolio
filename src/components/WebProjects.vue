@@ -25,7 +25,7 @@ const projects = ref([
     technologies: 'Java, Spring Boot, PostgreSQL, Vue.js',
     challenges:
       'This web app documents my personal collection of music gear with add, update, delete, sort and filter search functionality',
-    liveDemoLink: '#',
+    liveDemoLink: '',
     githubLink: 'https://github.com/joelrennert/musicgear'
   },
   {
@@ -34,7 +34,7 @@ const projects = ref([
     features: ['', '', ''],
     technologies: 'Java, Spring Boot, PostgreSQL, Vue.js',
     challenges: '',
-    liveDemoLink: '#',
+    liveDemoLink: '',
     githubLink: 'https://github.com/joelrennert/SWEtransfercredits'
   },
   {
@@ -43,7 +43,7 @@ const projects = ref([
     features: ['', '', ''],
     technologies: 'Java',
     challenges: '',
-    liveDemoLink: '#',
+    liveDemoLink: '',
     githubLink: 'https://github.com/joelrennert/hazardousasteroid'
   },
   {
@@ -52,7 +52,7 @@ const projects = ref([
     features: ['', '', ''],
     technologies: 'Java',
     challenges: 'Get an email when there is a potentially hazardous asteroid nearby',
-    liveDemoLink: '#',
+    liveDemoLink: '',
     githubLink: 'https://github.com/joelrennert/hazardousasteroid'
   },
   {
@@ -80,7 +80,7 @@ const projects = ref([
     features: ['', '', ''],
     technologies: 'Vue.js',
     challenges: '2d images of 3d cubes rotating in close proximity',
-    liveDemoLink: '#',
+    liveDemoLink: '',
     githubLink: '#'
   },
   {
@@ -89,7 +89,7 @@ const projects = ref([
     features: ['', '', ''],
     technologies: 'Vue.js',
     challenges: '',
-    liveDemoLink: '#',
+    liveDemoLink: '',
     githubLink: '#'
   }
 ])
@@ -290,35 +290,34 @@ onBeforeUnmount(() => {
   transform: translateY(0);
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 1200px) {
   .skillsContainer {
-    width: 50vw; /* Adjusted for medium screens */
+    width: 50vw;
   }
 
   .rows {
-    width: 100%; /* Fill the container width */
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .skillsContainer {
-    width: 70vw; /* Adjusted for smaller screens */
+    width: 70vw;
   }
 
   .rows {
-    width: 100%; /* Fill the container width */
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .skillsContainer {
-    width: 90vw; /* Max width for mobile screens */
+    width: 90vw;
   }
 
   .rows {
-    width: 100%; /* Fill the container width */
-    padding: 10px; /* Reduced padding for mobile */
+    width: 100%;
+    padding: 10px;
   }
 }
 </style>
