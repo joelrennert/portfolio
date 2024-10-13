@@ -81,7 +81,7 @@ const projects = ref([
     technologies: 'Vue.js',
     challenges: '2d images of 3d cubes rotating in close proximity',
     liveDemoLink: '',
-    githubLink: '#'
+    githubLink: ''
   },
   {
     title: 'Wobbly Eyes',
@@ -90,7 +90,7 @@ const projects = ref([
     technologies: 'Vue.js',
     challenges: '',
     liveDemoLink: '',
-    githubLink: '#'
+    githubLink: ''
   }
 ])
 
