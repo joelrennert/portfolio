@@ -21,8 +21,12 @@
         <p>Wanna say hi?</p>
         <p>Reach out through the form or find me on</p>
         <div class="socialIcons">
-          <a href="#"><img src="../assets/li.png" width="40" /></a>
-          <a href="#"><img src="../assets/github-mark.png" width="40" /></a>
+          <a href="https://www.linkedin.com/in/joelrennert/" target="_blank"
+            ><img src="../assets/li.png" width="40"
+          /></a>
+          <a href="https://github.com/joelrennert" target="_blank"
+            ><img src="../assets/github-mark.png" width="40"
+          /></a>
         </div>
         <div class="contactFormContainer">
           <ContactForm />
