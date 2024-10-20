@@ -153,7 +153,7 @@ export default {
   border-bottom: 1px solid rgba(255, 255, 255, 0.184);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  margin-top: -100px;
+  margin-top: -15vh;
 }
 
 .introTextContainer {
