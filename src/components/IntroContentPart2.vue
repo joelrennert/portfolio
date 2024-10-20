@@ -116,6 +116,7 @@ onUnmounted(() => {
 .introContentSubSection {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 95vw;
   /* background-color: rgba(124, 217, 163, 0.619); */
   background: radial-gradient(
@@ -134,7 +135,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   font-family: 'Poppins';
   border-bottom: 1px solid rgba(255, 255, 255, 0.184);
@@ -227,14 +228,34 @@ onUnmounted(() => {
 
 @media (max-width: 768px) {
   .introContent2 {
-    width: 70vw;
+    width: 100vw;
   }
   .introTitle2ndRow {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .introContentSubSection {
+    width: 100%;
+    display: flex;
+  }
+  .title-large {
+    letter-spacing: normal;
     font-size: 2rem;
+  }
+
+  .title-medium {
+    letter-spacing: normal;
+    font-size: 1.5rem;
+  }
+
+  .title-small {
+    letter-spacing: normal;
+    font-size: 1rem;
+    /* letter-spacing: 20px; */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   .introContent2 {
     width: 100vw;
   }
@@ -248,7 +269,19 @@ onUnmounted(() => {
     flex-wrap: wrap;
     text-wrap: wrap;
   }
+  .title-large {
+    font-size: 3rem;
+    letter-spacing: 10px;
+  }
+
+  .title-medium {
+    font-size: 2rem;
+    letter-spacing: 10px;
+  }
+
   .title-small {
+    font-size: 1.4rem;
+    letter-spacing: 20px;
   }
 }
 </style>

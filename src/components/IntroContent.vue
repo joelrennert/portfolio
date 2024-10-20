@@ -244,6 +244,7 @@ export default {
     padding: 15px;
     padding-top: 25%;
   }
+  
 }
 
 @media (max-width: 430px) {
@@ -259,6 +260,7 @@ export default {
   .introContent {
     /* padding: 10px; */
     /* gap: 20px; */
+    margin-top:-80%;
   }
 }
 </style>
