@@ -34,3 +34,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media (max-width: 3000px) {
+body, html {
+  width: 100vw;
+}
+}

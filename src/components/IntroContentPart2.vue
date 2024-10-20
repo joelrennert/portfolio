@@ -117,7 +117,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95vw;
+  width: 100vw;
   /* background-color: rgba(124, 217, 163, 0.619); */
   background: radial-gradient(
     circle at 20% 20%,
@@ -135,7 +135,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   font-family: 'Poppins';
   border-bottom: 1px solid rgba(255, 255, 255, 0.184);
@@ -219,7 +219,7 @@ onUnmounted(() => {
 
 @media (max-width: 1200px) {
   .introContent2 {
-    width: 50vw;
+    width: 100vw;
   }
   .introTitle2ndRow {
     font-size: 2.5rem;
@@ -270,12 +270,12 @@ onUnmounted(() => {
     text-wrap: wrap;
   }
   .title-large {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 10px;
   }
 
   .title-medium {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 10px;
   }
 

@@ -71,9 +71,14 @@ html {
   z-index: 40;
   height: 15vh;
 }
-
+@media (max-width: 1400px) {
+  .main-container {
+    /* padding: 15px; */
+  }
+}
 @media (max-width: 1024px) {
   .main-container {
+    width: 100vw;
     padding: 15px;
   }
 
@@ -82,9 +87,20 @@ html {
   }
 }
 
+.heroImage {
+  width: 60%;
+  max-width: 200px;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .main-container {
-    padding: 10px;
+    width: 100vw;
+  }
+  .projectsContainer,
+  .projects {
+    width: 100vw;
+    padding: 0;
   }
 
   .heroContainer {
@@ -115,7 +131,7 @@ html {
   .projects {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
   }
 
   h2,
@@ -134,7 +150,8 @@ html {
 
 @media (max-width: 375px) {
   .main-container {
-    padding: 5px;
+    /* padding: 5px; */
+    width: 100vw;
   }
 
   .heroContainer {
@@ -148,7 +165,7 @@ html {
 
   .heroImage {
     width: 90%;
-    max-width: 200px;
+    /* max-width: 200px; */
     height: auto;
   }
 }

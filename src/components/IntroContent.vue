@@ -213,6 +213,22 @@ export default {
   padding-left: 30px;
   padding-right: 30px;
 }
+@media (max-width: 1024px) {
+  .heroImage {
+    width: 80px;
+  }
+
+  .introTitle {
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+  }
+
+  .introContent {
+    /* padding: 20px; */
+    gap: 30px;
+    margin-top: -20%;
+  }
+}
 
 @media (max-width: 992px) {
   .heroImage {
@@ -247,7 +263,7 @@ export default {
 
 @media (max-width: 430px) {
   .heroImage {
-    width: 50px;
+    width: 8%;
   }
 
   .introTitle {
