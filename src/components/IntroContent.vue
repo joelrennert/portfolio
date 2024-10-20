@@ -153,7 +153,7 @@ export default {
   border-bottom: 1px solid rgba(255, 255, 255, 0.184);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  margin-top: -20%;
+  margin-top: -10%;
 }
 
 .introTextContainer {
@@ -193,7 +193,6 @@ export default {
   opacity: 1;
   color: #f3e0c1;
   /* color: #42484c; */
-
 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   /* text-align: center; */
@@ -244,7 +243,6 @@ export default {
     padding: 15px;
     padding-top: 25%;
   }
-  
 }
 
 @media (max-width: 430px) {
@@ -260,7 +258,7 @@ export default {
   .introContent {
     /* padding: 10px; */
     /* gap: 20px; */
-    margin-top:-80%;
+    margin-top: -80%;
   }
 }
 </style>
