@@ -30,7 +30,6 @@
 import { ref } from 'vue'
 import ProjectModal from '../components/ProjectModal.vue'
 import WebFlowProjectsTitleCard from './WebFlowProjectsTitleCard.vue'
-import WebFlowProject1Details from './WebFlowProject1Details.vue'
 import WebFlowProject2Details from './WebFlowProject2Details.vue'
 import WebFlowProject3Details from './WebFlowProject3Details.vue'
 
@@ -52,15 +51,7 @@ const projects = ref([
     impact: '',
     future: ''
   },
-  {
-    title: 'Scented Moments',
-    overview: 'Product site prototype',
-    features: ['', '', ''],
-    technologies: 'Webflow HTML CSS',
-    challenges: '',
-    impact: '',
-    future: ''
-  },
+
   {
     title: 'Portfolio',
     overview: 'Personal portfolio prototype',
@@ -97,10 +88,7 @@ const getComponentForIndex = (index) => {
     case 0:
       return WebFlowProject3Details
     case 1:
-      return WebFlowProject1Details
-    case 2:
       return WebFlowProject2Details
-    // Add cases for additional projects
     default:
       return null
   }
@@ -175,24 +163,18 @@ const getComponentForIndex = (index) => {
 
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
- 
-
   .rows {
     width: 100%; /* Fill the container width */
   }
 }
 
 @media (max-width: 768px) {
- 
-
   .rows {
     width: 100%; /* Fill the container width */
   }
 }
 
 @media (max-width: 480px) {
- 
-
   .rows {
     width: 100%; /* Fill the container width */
     padding: 10px; /* Reduced padding for mobile */
