@@ -15,7 +15,7 @@
         <h2 class="wideh2">web projects</h2>
       </div>
       <div class="heroText">
-        <p>Web apps, Java APIs & Vue experiments</p>
+        <p>Web apps, Java, & Vue experiments</p>
       </div>
       <div class="toggleArrow" :class="{ collapsed: !isClicked, expanded: isClicked }">
         <span v-if="!isClicked"><img src="../assets/expand.png" width="20px" /></span>
@@ -206,7 +206,6 @@ onBeforeUnmount(() => {
   padding-right: 5px;
   transition: background 0.9s ease-in-out;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
 }
 
 .heroText {
@@ -243,7 +242,6 @@ onBeforeUnmount(() => {
   transition: opacity 0.3s ease;
   color: #f3e0c1;
   font-style: italic;
-  
 }
 
 .toggleArrow.collapsed {
@@ -256,18 +254,14 @@ onBeforeUnmount(() => {
 
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
-  
 }
 
 @media (max-width: 768px) {
-
 }
 
 @media (max-width: 480px) {
-.wideh2 {
-  font-size: 4rem;
+  .wideh2 {
+    font-size: 4rem;
+  }
 }
-}
-
-
 </style>

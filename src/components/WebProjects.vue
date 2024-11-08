@@ -9,6 +9,7 @@ import WebProject6Details from '../components/WebProject6Details.vue'
 import WebProject7Details from '../components/WebProject7Details.vue'
 import WebProject8Details from '../components/WebProject8Details.vue'
 import WebProject9Details from '../components/WebProject9Details.vue'
+import WebProject10Details from './WebProject10Details.vue'
 import ProjectModal from '../components/ProjectModal.vue'
 import WebProjectsTitleCard from './WebProjectsTitleCard.vue'
 
@@ -64,7 +65,15 @@ const projects = ref([
     liveDemoLink: 'https://joelrennert.github.io/whiteballs/',
     githubLink: 'https://github.com/joelrennert/whiteballs'
   },
-
+  {
+    title: '200mg',
+    overview: 'interactive vue art',
+    features: ['', '', ''],
+    technologies: 'Vue.js',
+    challenges: '',
+    liveDemoLink: 'https://joelrennert.github.io/200mg/',
+    githubLink: 'https://github.com/joelrennert/200mg/'
+  },
   {
     title: 'Ultimate Frisbee',
     overview: 'interactive vue art',
@@ -131,11 +140,13 @@ const getComponentForIndex = (index) => {
       return WebProject9Details
 
     case 5:
-      return WebProject6Details
+      return WebProject10Details
 
     case 6:
-      return WebProject8Details
+      return WebProject6Details
     case 7:
+      return WebProject8Details
+      case 8:
       return WebProject7Details
     default:
       return null
