@@ -12,20 +12,24 @@
       />
     </div>
     <div class="introTextContainer">
-      <div class="introTextLeft"></div>
-      <h2 class="introTitleH2">I'm JOEL</h2>
-      <br />
-      <div class="introTextMid">
+      <div class="introTextLeft">
         <h3 class="introTitleH3">
-          a laid back creative type based out of Columbus Ohio
-          <!-- <h3 class="introTitleH3Creative"> creative </h3>
-          <h3 class="introTitleH3">individual based out of Columbus Ohio</h3>
-
-          <h3 class="introTitleH3"></h3> -->
+          I'm
+          <h2 class="introTitleH2">JOEL</h2>
+        </h3>
+        <br />
+      </div>
+      <div class="introTextMid">
+        <h3 class="introTitleH3">I
+          <h2 class="introTitleH2"> make art</h2>
+          <h3 class="introTitleH3">
+            with the
+          
+          </h3>
         </h3>
       </div>
       <div class="introTextRight">
-        <h3 class="introTitleH3"></h3>
+        <h2 class="introTitleH2">internet</h2>
       </div>
     </div>
   </div>
@@ -90,24 +94,30 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  text-align: center; 
+  gap: 15px; 
+  width: 100%; 
 }
 
 .introTextMid {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  text-align: center; 
+  gap: 15px; 
+  width: 100%; 
 }
+
+
 
 .introTextRight {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap; 
+  text-align: center; 
+  gap: 15px; 
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .heroImageContainer {
@@ -146,7 +156,7 @@ export default {
   padding-bottom: 80px;
   font-family: 'Poppins';
   background-image: url('../assets/bluebg.png');
-  /* background-image: url('../assets/whiteballs.png'); */
+  background-image: url('../assets/scales.png');
 
   background-size: cover;
   background-position: center top;
@@ -158,8 +168,8 @@ export default {
 
 .introTextContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: space-around;
   align-items: flex-start;
   width: 100%;
   padding-left: 50px;
@@ -177,12 +187,13 @@ export default {
   line-height: 1;
   opacity: 1;
   color: #f3e0c1;
-  /* color: #42484c; */
+  color: #383535;
   /* color: rgb(48, 48, 48); */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   /* text-align: center; */
   font-weight: 400;
 }
+
 .introTitleH3 {
   font-size: 2.8rem;
   padding-bottom: 10px;
@@ -191,7 +202,7 @@ export default {
   letter-spacing: -3px;
   line-height: 1;
   opacity: 1;
-  color: #f3e0c1;
+  color: #383535;
   /* color: #42484c; */
 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);

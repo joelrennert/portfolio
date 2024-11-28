@@ -10,6 +10,9 @@ import WebProject7Details from '../components/WebProject7Details.vue'
 import WebProject8Details from '../components/WebProject8Details.vue'
 import WebProject9Details from '../components/WebProject9Details.vue'
 import WebProject10Details from './WebProject10Details.vue'
+import WebProject11Details from './WebProject11Details.vue'
+import WebProject12Details from './WebProject12Details.vue'
+import WebProject13Details from './WebProject13Details.vue'
 import ProjectModal from '../components/ProjectModal.vue'
 import WebProjectsTitleCard from './WebProjectsTitleCard.vue'
 
@@ -70,7 +73,7 @@ const projects = ref([
     overview: 'interactive vue art',
     features: ['', '', ''],
     technologies: 'Vue.js',
-    challenges: '',
+    challenges: 'got a headache',
     liveDemoLink: 'https://joelrennert.github.io/200mg/',
     githubLink: 'https://github.com/joelrennert/200mg/'
   },
@@ -98,6 +101,33 @@ const projects = ref([
     features: ['', '', ''],
     technologies: 'Vue.js',
     challenges: '',
+    liveDemoLink: '',
+    githubLink: ''
+  },
+  {
+    title: 'Scales',
+    overview: 'vue art',
+    features: ['', '', ''],
+    technologies: 'Vue.js',
+    challenges: 'Breathing wall of scale type shapes',
+    liveDemoLink: 'https://joelrennert.github.io/scales/',
+    githubLink: 'https://github.com/joelrennert/scales'
+  },
+  {
+    title: 'Tube',
+    overview: 'vue art',
+    features: ['', '', ''],
+    technologies: 'Vue.js',
+    challenges: 'Repeating web elements',
+    liveDemoLink: '',
+    githubLink: ''
+  },
+  {
+    title: 'Untitled',
+    overview: 'vue art',
+    features: ['', '', ''],
+    technologies: 'Vue.js',
+    challenges: 'Repeating web elements',
     liveDemoLink: '',
     githubLink: ''
   }
@@ -146,8 +176,14 @@ const getComponentForIndex = (index) => {
       return WebProject6Details
     case 7:
       return WebProject8Details
-      case 8:
+    case 8:
       return WebProject7Details
+    case 9:
+      return WebProject11Details
+    case 10:
+      return WebProject12Details
+    case 11:
+      return WebProject13Details
     default:
       return null
   }

@@ -68,7 +68,7 @@ const handleScroll = () => {
         imageTransform.value = 'scale(0.4)'
         titleFontSize.value = '1.6rem'
         heroSubtitleFontSize.value = '2rem'
-        heroSubtitleOpacity.value = 0 // Fade out the subtitle
+        heroSubtitleOpacity.value = 0 
         justifyContent.value = 'space-between'
         topRowPaddingLeft.value = '10px'
         isScrolledDown.value = true
@@ -80,7 +80,7 @@ const handleScroll = () => {
         imageTransform.value = 'scale(1.5)'
         titleFontSize.value = '8rem'
         heroSubtitleFontSize.value = '2rem'
-        heroSubtitleOpacity.value = 1 // Fade in the subtitle
+        heroSubtitleOpacity.value = 1 
         justifyContent.value = 'space-between'
         topRowPaddingLeft.value = '100px'
         isScrolledDown.value = false
@@ -99,7 +99,7 @@ const handleClick = () => {
     imageTransform.value = 'scale(0.3)'
     titleFontSize.value = '1.3rem'
     heroSubtitleFontSize.value = '1rem'
-    heroSubtitleOpacity.value = 0 // Fade out the subtitle
+    heroSubtitleOpacity.value = 0 
     justifyContent.value = 'space-between'
     topRowPaddingLeft.value = '10px'
     isScrolledDown.value = true
@@ -107,7 +107,7 @@ const handleClick = () => {
     borderBottomRightRadius.value = '0px'
   } else {
     handleScroll()
-    heroSubtitleOpacity.value = 1 // Fade in the subtitle when clicking back
+    heroSubtitleOpacity.value = 1 
   }
 }
 
@@ -125,9 +125,9 @@ onMounted(() => {
       isTextLoaded.value = true
       setTimeout(() => {
         isCTALoaded.value = true
-      }, 500) // Delay for the CTA fade-in after text
-    }, 500) // Delay for the text fade-in after image
-  }, 0) // Initial delay for the image fade-in
+      }, 500) 
+    }, 500) 
+  }, 0) 
 
   toggleHeightAfterDelay()
 })
@@ -231,8 +231,8 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: transform 0.5s ease;
   margin-top: -55px;
-  transform-origin: center center; /* Ensures scaling happens from the center */
-  transition: transform 0.5s ease, top 0.5s ease; /* Smoothens the transition */
+  transform-origin: center center; 
+  transition: transform 0.5s ease, top 0.5s ease; 
 }
 
 .rotate .heroImage:hover {

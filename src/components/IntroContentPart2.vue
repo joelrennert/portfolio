@@ -1,5 +1,12 @@
 <template>
   <div class="introContent2">
+    <div class="featured">
+      <img class="featuredImage" src="../assets/heroimage.jpg" />
+      <!-- <div class="featuredText">
+        <p>this image is a webpage</p>
+        <p>It is made up of web components or html elements</p>
+      </div> -->
+    </div>
     <div class="introContentSubSection">
       <div
         v-for="(item, index) in titles"
@@ -55,7 +62,7 @@ const titles = ref([
     animationClass: 'slideIn'
   },
   { type: 'text', content: '' },
-  { type: 'text', content: 'i spend my time in these realms', textSizeClass: 'title-medium' },
+  { type: 'text', content: 'I spend my time in these zones', textSizeClass: 'title-medium' },
   { type: 'text', content: '' },
   { type: 'text', content: '' },
 
@@ -113,6 +120,25 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.featuredImage {
+  /* width: 20%; */
+  height: 80vh;
+  /* width: 95vw; */
+  border-radius: 20px;
+}
+.featuredText {
+  font-family: 'IBM Plex Mono';
+  font-size: 1rem;
+  font-style: italic;
+}
+.featured {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
 .introContentSubSection {
   display: flex;
   flex-direction: column;
