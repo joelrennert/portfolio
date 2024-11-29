@@ -1,13 +1,23 @@
 <template>
   <div class="introContent2">
     <div class="featured">
-      <img class="featuredImage" src="../assets/heroimage.jpg" />
-      <!-- <div class="featuredText">
-        <p>this image is a webpage</p>
-        <p>It is made up of web components or html elements</p>
-      </div> -->
+      <div class="featuredText">Untitled 2024, Vue.js</div>
+      <img
+        class="featuredImage"
+        src="../assets/hero.jpg"
+        alt="Featured"
+        @click="showPopup = true"
+      />
     </div>
+    <div v-if="showPopup" class="imageOverlay" @click="showPopup = false">
+      <div class="popupContent">
+        <img src="../assets/hero.jpg" alt="Popup Image" class="popupImage" />
+        <p class="popupText">Untitled 2024, Made with Vue.js</p>
+      </div>
+    </div>
+    
     <div class="introContentSubSection">
+      
       <div
         v-for="(item, index) in titles"
         :key="index"
@@ -38,6 +48,7 @@ import cubes2 from '@/assets/cubes2.png'
 import cubes3 from '@/assets/cubes3.png'
 import cubes4 from '@/assets/cubes4.png'
 import cubes from '@/assets/cubes.png'
+const showPopup = ref(false)
 
 const titles = ref([
   {
@@ -120,24 +131,86 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.imageOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(56, 75, 81, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+.imageOverlay:hover {
+  cursor: pointer;
+}
+
+.popupContent {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 95vw;
+  max-height: 98vh;
+  overflow: auto;
+  overflow: hidden;
+}
+
+.popupImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.popupText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+
 .featuredImage {
   /* width: 20%; */
-  height: 80vh;
-  /* width: 95vw; */
-  border-radius: 20px;
+  /* height: 80vh; */
+  /* width: 80vw; */
+  height: 70vh;
+  border-radius: 16px;
+  padding: 5px;
 }
 .featuredText {
   font-family: 'IBM Plex Mono';
   font-size: 1rem;
   font-style: italic;
+  padding: 10px;
+  /* padding-bottom: 20px; */
 }
 .featured {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  background-color: rgba(190, 193, 194, 0.121);
+  border-radius: 20px;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  background-image: url('../assets/bluebg.png');
+
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.featured:hover {
+  cursor: pointer;
 }
 .introContentSubSection {
   display: flex;
@@ -232,7 +305,7 @@ onUnmounted(() => {
 
 .title-small {
   font-size: 1.7rem;
-  letter-spacing: 20px;
+  letter-spacing: 15px;
 }
 
 .introImage.small {

@@ -12,7 +12,7 @@
     </div>
     <div class="rightSide">
       <div class="h2Text">
-        <h2 class="wideh2">web projects</h2>
+        <h2 class="wideh2">technical projects</h2>
       </div>
       <div class="heroText">
         <p>Web apps, Java, & Vue experiments</p>

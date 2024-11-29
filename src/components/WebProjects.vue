@@ -13,6 +13,7 @@ import WebProject10Details from './WebProject10Details.vue'
 import WebProject11Details from './WebProject11Details.vue'
 import WebProject12Details from './WebProject12Details.vue'
 import WebProject13Details from './WebProject13Details.vue'
+import WebProject14Details from './WebProject14Details.vue'
 import ProjectModal from '../components/ProjectModal.vue'
 import WebProjectsTitleCard from './WebProjectsTitleCard.vue'
 
@@ -130,6 +131,15 @@ const projects = ref([
     challenges: 'Repeating web elements',
     liveDemoLink: '',
     githubLink: ''
+  },
+  {
+    title: 'Homelab',
+    overview: '',
+    features: ['', '', ''],
+    technologies: 'Vue.js',
+    challenges: 'Proxmox based homelab, Lenovo m920x, Lenovo m920q, Dell Wyse 3040',
+    liveDemoLink: '',
+    githubLink: ''
   }
 ])
 
@@ -184,6 +194,8 @@ const getComponentForIndex = (index) => {
       return WebProject12Details
     case 11:
       return WebProject13Details
+      case 12:
+      return WebProject14Details
     default:
       return null
   }

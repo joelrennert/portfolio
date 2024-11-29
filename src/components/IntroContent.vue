@@ -20,15 +20,12 @@
         <br />
       </div>
       <div class="introTextMid">
-        <h3 class="introTitleH3">I
-          <h2 class="introTitleH2"> make art</h2>
-          <h3 class="introTitleH3">
-            with the
-          
-          </h3>
+        <h3 class="introTitleH3">
+          <h2 class="introTitleH2">I make art</h2>
         </h3>
       </div>
       <div class="introTextRight">
+        <h3 class="introTitleH3">with the</h3>
         <h2 class="introTitleH2">internet</h2>
       </div>
     </div>
@@ -94,29 +91,27 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; 
-  gap: 15px; 
-  width: 100%; 
+  text-align: center;
+  gap: 25px;
+  width: 100%;
 }
 
 .introTextMid {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; 
-  gap: 15px; 
-  width: 100%; 
+  text-align: center;
+  gap: 35px;
+  width: 100%;
 }
-
-
 
 .introTextRight {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
-  text-align: center; 
-  gap: 15px; 
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 25px;
   width: 100%;
 }
 
@@ -169,13 +164,18 @@ export default {
 .introTextContainer {
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  padding-left: 50px;
 
-  padding: 30px;
-  gap: 20px;
+  margin-top: 2%;
+  padding: 20px;
+  gap: 35px;
+  background: rgba(255, 255, 255, 0.085);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .introTitleH2 {
@@ -188,6 +188,7 @@ export default {
   opacity: 1;
   color: #f3e0c1;
   color: #383535;
+  /* color: #ffffff; */
   /* color: rgb(48, 48, 48); */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   /* text-align: center; */
@@ -203,7 +204,7 @@ export default {
   line-height: 1;
   opacity: 1;
   color: #383535;
-  /* color: #42484c; */
+  /* color: #f3e0c1; */
 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   /* text-align: center; */
