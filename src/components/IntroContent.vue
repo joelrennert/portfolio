@@ -172,7 +172,7 @@ export default {
   padding: 20px;
   gap: 35px;
   background: rgba(222, 212, 184, 0.583);
-  border-radius: 12px;
+  border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
