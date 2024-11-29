@@ -87,7 +87,7 @@ const titles = ref([
   { type: 'text', content: 'modular synthesis  sound design', textSizeClass: 'title-medium' },
   { type: 'text', content: ' ', textSizeClass: 'title-medium' },
   { type: 'image', content: cubes, sizeClass: 'medium' },
-  { type: 'text', content: 'circuit bending & electronics', textSizeClass: 'title-medium' },
+  { type: 'text', content: 'home lab & hardware', textSizeClass: 'title-medium' },
   { type: 'text', content: ' ', textSizeClass: 'title-medium' },
   { type: 'image', content: image3dhash, sizeClass: 'small' }
 ])
