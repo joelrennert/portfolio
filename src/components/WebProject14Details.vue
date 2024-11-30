@@ -3,7 +3,7 @@
     <div class="image">
       <div class="blank"></div>
       <div class="info">
-        <h2>Homelab</h2>
+        <h2>Mini Homelab</h2>
         <p>2024</p>
       </div>
     </div>

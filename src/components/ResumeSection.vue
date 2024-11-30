@@ -1,5 +1,5 @@
 <template>
-  <div :class="['contentContainer', { 'no-margin': !projectsVisible }]">
+  <div id="experience" :class="['contentContainer', { 'no-margin': !projectsVisible }]">
     <ResumeTitleCard @click="toggleProjects" />
 
     <transition name="rows">
@@ -49,7 +49,6 @@ const toggleProjects = () => {
   /* background-color: #f09342; */
   /* background-color: #bc763c; */
 
-  
   padding: 10px;
   padding-bottom: 20px;
   border-bottom-left-radius: 20px;

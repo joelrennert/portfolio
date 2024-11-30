@@ -1,5 +1,5 @@
 <template>
-  <div class="introContent2">
+  <div class="introContent2" id="featured">
     <div class="featured">
       <div class="featuredText">Untitled 2024, Vue.js</div>
       <img
@@ -15,9 +15,8 @@
         <p class="popupText">Untitled 2024, Made with Vue.js</p>
       </div>
     </div>
-    
+
     <div class="introContentSubSection">
-      
       <div
         v-for="(item, index) in titles"
         :key="index"
@@ -207,6 +206,7 @@ onUnmounted(() => {
 
   background-size: cover;
   margin-bottom: 20px;
+  margin-top: 5%;
 }
 
 .featured:hover {

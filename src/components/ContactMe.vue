@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" id="contact">
     <div class="side1">
       <div class="heroTitle">
         <div class="h2Text">

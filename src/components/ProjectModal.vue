@@ -131,7 +131,7 @@ export default {
   align-items: center;
   background-color: #9d9b9bc0;
   border-radius: 16px;
-  width: 90vw;
+  width: 95vw;
   height: 95vh;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.102);

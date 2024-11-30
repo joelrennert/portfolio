@@ -4,16 +4,14 @@ import SkillsComponents from './SkillsComponents.vue'
 </script>
 
 <template>
-  <div class="mainContainer">
+  <div class="mainContainer" id="info">
     <div class="contentContainer">
-
       <div class="aboutContainer">
         <AboutMeComponents />
       </div>
       <div class="skillsContainer">
         <SkillsComponents />
       </div>
-
     </div>
   </div>
 </template>
@@ -23,9 +21,8 @@ export default {}
 </script>
 
 <style scoped>
-
 .containerContainer {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -47,8 +44,6 @@ export default {}
   /* margin-top: 40px; */
 
   /* background-color: #373532dc; */
-
-
 }
 
 .aboutContainer,

@@ -10,13 +10,12 @@
           ~ripping apart~ the family 386 computer and reassembling it to see how it worked
         </p>
         <p>
-          Self-learned HTML in 1995 from online tutorials using notepad.exe and went on to make
-          websites for family and friends
+          From there I learned HTML in 1995 from online tutorials using notepad.exe and went on to
+          make websites for family and friends
         </p>
         <p>
-          In 2023, after years working in fabrication and fine arts, I brushed up on my technical
-          skills and graduated from Tech Elevator, a Full Stack Web Development bootcamp in
-          Columbus, Ohio
+          After years working in fabrication and fine arts, I brushed up on my technical knowledge
+          and graduated from Tech Elevator, a Full Stack Web Development bootcamp in Columbus, Ohio
         </p>
       </div>
     </div>

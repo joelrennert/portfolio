@@ -1,5 +1,5 @@
 <template>
-  <div class="contentContainer">
+  <div class="contentContainer" id="creative">
     <CreativeProjectsTitleCard @click="toggleProjects" />
 
     <transition name="fade">

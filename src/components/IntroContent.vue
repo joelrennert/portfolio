@@ -1,5 +1,22 @@
 <template>
   <div class="introContent">
+    <div class="introTextContainer">
+      <div class="introTextLeft">
+        <h2 class="introTitleH2">I'm JOEL</h2>
+      </div>
+      <div class="introTextMid">
+        <h3 class="introTitleH3">I make web apps</h3>
+        <h3 class="introTitleH3">& create art</h3>
+        <h3 class="introTitleH3">with the internet</h3>
+        <a href="#featured" class="scroll-button">
+          <button class="btn">
+            <span class="italicText">Learn more</span>
+            <span class="arrow"> ⬇︎</span>
+          </button>
+        </a>
+      </div>
+    </div>
+
     <div class="heroImageContainer">
       <img
         v-for="(image, index) in images"
@@ -10,24 +27,6 @@
         }"
         class="heroImage"
       />
-    </div>
-    <div class="introTextContainer">
-      <div class="introTextLeft">
-        <h3 class="introTitleH3">
-          I'm
-          <h2 class="introTitleH2">JOEL</h2>
-        </h3>
-        <br />
-      </div>
-      <div class="introTextMid">
-        <h3 class="introTitleH3">
-          <h2 class="introTitleH2">I make art</h2>
-        </h3>
-      </div>
-      <div class="introTextRight">
-        <h3 class="introTitleH3">with the</h3>
-        <h2 class="introTitleH2">internet</h2>
-      </div>
     </div>
   </div>
 </template>
@@ -78,6 +77,49 @@ export default {
 </script>
 
 <style scoped>
+.italicText {
+  font-style: italic;
+}
+
+.arrow {
+  font-style: normal; /* Remove italic from the arrow */
+}
+
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #549dbfdc;
+  color: #ffffff;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #549dbf;
+}
+
+.btn:hover {
+  background-color: #549dbf9c;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  background-color: #3a6787;
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -91,18 +133,20 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  gap: 25px;
-  width: 100%;
+  /* gap: 25px; */
+  width: 70%;
+  padding-left: 10%;
 }
 
 .introTextMid {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   text-align: center;
   gap: 35px;
   width: 100%;
+  flex-grow: 3;
 }
 
 .introTextRight {
@@ -111,7 +155,7 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  gap: 25px;
+  /* gap: 25px; */
   width: 100%;
 }
 
@@ -120,6 +164,10 @@ export default {
   justify-content: space-evenly;
   /* flex-wrap: wrap; */
   position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.1s;
+  margin-bottom: 2%;
 }
 
 .heroImage {
@@ -151,35 +199,50 @@ export default {
   padding-bottom: 80px;
   font-family: 'Poppins';
   background-image: url('../assets/bluebg.png');
-  background-image: url('../assets/scales.png');
+  /* background-image: url('../assets/scales.png'); */
+  background-image: url('../assets/heroimage.jpg');
 
-  background-size: cover;
-  background-position: center top;
+  background-size: 200%;
+  background-position: left center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.184);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   margin-top: -10%;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .introTextContainer {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-
-  margin-top: 2%;
+  /* margin-top: 2%; */
   padding: 20px;
+  margin-bottom: 10%;
   gap: 35px;
-  background: rgba(222, 212, 184, 0.583);
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
+  /* background: rgba(222, 212, 184, 0.154); */
+  /* background-color: rgba(35, 144, 254, 0.051); */
+
+  /* border-radius: 16px;
+  backdrop-filter: blur(2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.5s;
 }
 
 .introTitleH2 {
-  font-size: 5rem;
+  font-size: 7rem;
   padding-bottom: 10px;
   font-style: italic;
   font-family: 'IBM Plex Mono';
@@ -187,7 +250,7 @@ export default {
   line-height: 1;
   opacity: 1;
   color: #f3e0c1;
-  color: #383535;
+  /* color: #383535; */
   /* color: #ffffff; */
   /* color: rgb(48, 48, 48); */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -196,7 +259,7 @@ export default {
 }
 
 .introTitleH3 {
-  font-size: 2.8rem;
+  font-size: 4rem;
   padding-bottom: 10px;
   font-style: italic;
   font-family: 'IBM Plex Mono';
@@ -204,7 +267,7 @@ export default {
   line-height: 1;
   opacity: 1;
   color: #383535;
-  /* color: #f3e0c1; */
+  color: #faf8f5eb;
 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   /* text-align: center; */
@@ -225,6 +288,9 @@ export default {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+
+
 @media (max-width: 1024px) {
   .heroImage {
     width: 80px;

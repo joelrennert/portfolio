@@ -1,5 +1,5 @@
 <script setup>
-import HeroCard from '../components/HeroCard.vue'
+// import HeroCard from '../components/HeroCard.vue'
 import IntroContent from '@/components/IntroContent.vue'
 import CreativeProjects from '@/components/CreativeProjects.vue'
 import WebFlowProjects from '@/components/WebFlowProjects.vue'
@@ -9,12 +9,13 @@ import DividerCardFooter from '@/components/DividerCardFooter.vue'
 import ResumeSection from '@/components/ResumeSection.vue'
 import IntroContentPart2 from '@/components/IntroContentPart2.vue'
 import AboutSkills from '@/components/AboutSkills.vue'
+import TheHeader from '@/components/TheHeader.vue'
 </script>
 
 <template>
   <div class="main-container">
     <div class="heroContainer">
-      <HeroCard />
+      <TheHeader/>
     </div>
     <div class="introContainer">
       <IntroContent />
@@ -41,6 +42,7 @@ html {
   padding: 0;
   width: 100vw;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .main-container {

@@ -194,7 +194,7 @@ const getComponentForIndex = (index) => {
       return WebProject12Details
     case 11:
       return WebProject13Details
-      case 12:
+    case 12:
       return WebProject14Details
     default:
       return null
@@ -232,7 +232,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="contentContainer">
+  <div class="contentContainer" id="projects">
     <WebProjectsTitleCard @click="toggleProjects" />
 
     <transition name="fade">

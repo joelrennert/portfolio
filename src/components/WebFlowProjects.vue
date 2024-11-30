@@ -1,5 +1,5 @@
 <template>
-  <div class="contentContainer">
+  <div class="contentContainer" id="design">
     <WebFlowProjectsTitleCard @click="toggleProjects" />
 
     <transition name="fade">
