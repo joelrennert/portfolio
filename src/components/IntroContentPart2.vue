@@ -148,15 +148,19 @@ onUnmounted(() => {
 }
 
 .popupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #ffffff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 12px;
   box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.08);
   text-align: center;
   max-width: 95vw;
-  max-height: 98vh;
+  max-height: 100vh;
   overflow: auto;
   overflow: hidden;
 }
@@ -169,6 +173,9 @@ onUnmounted(() => {
 }
 
 .popupText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: #333333;
