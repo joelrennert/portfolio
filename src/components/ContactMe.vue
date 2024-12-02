@@ -19,7 +19,7 @@
       <div ref="side2Ref" class="side2">
         <p>Thanks for stepping in</p>
         <p>Wanna say hi?</p>
-        <p>Reach out through the form or find me on</p>
+        <p>Reach out through the form or find me here</p>
         <div class="socialIcons">
           <a href="https://www.linkedin.com/in/joelrennert/" target="_blank"
             ><img src="../assets/li.png" width="40"
@@ -154,8 +154,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 30%;
+  padding: 10px;
   gap: 20px;
+  background-color: rgba(245, 222, 179, 0.056);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.161);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
 .socialIcons img {

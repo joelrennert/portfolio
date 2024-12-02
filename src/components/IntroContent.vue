@@ -8,12 +8,14 @@
         <h3 class="introTitleH3">I make web apps</h3>
         <h3 class="introTitleH3">& create art</h3>
         <h3 class="introTitleH3">with the internet</h3>
-        <a href="#featured" class="scroll-button">
-          <button class="btn">
-            <span class="italicText">Learn more</span>
-            <span class="arrow"> ⬇︎</span>
-          </button>
-        </a>
+        <div class="btnContainer">
+          <a href="#featured" class="scroll-button">
+            <button class="btn">
+              <span class="italicText">Learn more</span>
+              <span class="arrow"> ⬇︎</span>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -92,6 +94,9 @@ export default {
   text-decoration: none;
 }
 
+.btnContainer {
+  margin-top: 40px;
+}
 .btn {
   background-color: #549dbfdc;
   color: #ffffff;
@@ -142,9 +147,9 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   text-align: center;
-  gap: 35px;
+  /* gap: 40px; */
   width: 100%;
   flex-grow: 3;
 }
@@ -155,7 +160,7 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  /* gap: 25px; */
+  gap: 25px;
   width: 100%;
 }
 
@@ -288,8 +293,6 @@ export default {
   padding-left: 30px;
   padding-right: 30px;
 }
-
-
 
 @media (max-width: 1024px) {
   .heroImage {
