@@ -148,8 +148,8 @@ const projects = ref([
     features: ['', '', ''],
     technologies: 'Vue.js',
     challenges: 'Interactive Vue art',
-    liveDemoLink: '',
-    githubLink: ''
+    liveDemoLink: 'https://joelrennert.github.io/121224/',
+    githubLink: 'https://github.com/joelrennert/121224'
   }
 ])
 
