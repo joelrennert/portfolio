@@ -14,6 +14,7 @@ import WebProject11Details from './WebProject11Details.vue'
 import WebProject12Details from './WebProject12Details.vue'
 import WebProject13Details from './WebProject13Details.vue'
 import WebProject14Details from './WebProject14Details.vue'
+import WebProject15Details from './WebProject15Details.vue'
 import ProjectModal from '../components/ProjectModal.vue'
 import WebProjectsTitleCard from './WebProjectsTitleCard.vue'
 
@@ -140,6 +141,15 @@ const projects = ref([
     challenges: 'Proxmox based homelab, Lenovo m920x, Lenovo m920q, Dell Wyse 3040',
     liveDemoLink: '',
     githubLink: ''
+  },
+  {
+    title: '121224',
+    overview: 'vue art',
+    features: ['', '', ''],
+    technologies: 'Vue.js',
+    challenges: 'Interactive Vue art',
+    liveDemoLink: '',
+    githubLink: ''
   }
 ])
 
@@ -196,6 +206,8 @@ const getComponentForIndex = (index) => {
       return WebProject13Details
     case 12:
       return WebProject14Details
+      case 13:
+      return WebProject15Details
     default:
       return null
   }
